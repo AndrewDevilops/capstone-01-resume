@@ -1,5 +1,6 @@
 body {
   margin: 2cm 1.5cm;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -25,7 +26,6 @@ header,
 main,
 footer {
   padding: 0 1cm;
-  
 }
 
 header,
@@ -37,6 +37,37 @@ main {
   margin-bottom: 1.5cm;
 }
 
+#c-table {
+  display: inline-grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 1em;
+  row-gap: 0.25em;
+  margin-left: 2.5em;
+}
+
+#s-text {
+  margin-left: 2.5em;
+}
+
 li > h3 {
   margin-bottom: 0;
+}
+
+footer {
+  font-family: 'Courier New', Courier, monospace;
+}
+footer > * {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+#f-contact {
+  justify-content: space-between;
+}
+#f-copy {
+  justify-content: space-around;
+}
+
+.u-line {
+  text-decoration: underline;
 }
