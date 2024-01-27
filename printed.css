@@ -72,9 +72,9 @@ footer > * {
   justify-content: space-around;
 }
 
-.u-line {
+/* .u-line {
   text-decoration: underline;
-}
+} */
 
 
 /* Printer Styling */
@@ -117,4 +117,8 @@ footer {
 
 li {
   break-inside: avoid;
+}
+
+a:any-link {
+  color: black;
 }
