@@ -1,3 +1,6 @@
+
+/* Default HD Desktop Styling */
+
 body {
   margin: 2cm 1.5cm;
   font-family: 'Times New Roman', Times, serif;
@@ -8,7 +11,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 1.5em;
+  margin-top: 1.5cm;
 }
 
 img {
@@ -39,14 +42,14 @@ main {
 
 #c-table {
   display: inline-grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: auto auto;
   column-gap: 1em;
   row-gap: 0.25em;
   margin-left: 2.5em;
 }
 
 #s-text {
-  margin-left: 2.5em;
+  margin: 0 2.5em;
 }
 
 li > h3 {
@@ -70,4 +73,96 @@ footer > * {
 
 .u-line {
   text-decoration: underline;
+}
+
+
+/* Tablets & Below Width */
+
+@media (width <= 800px) {
+  body {
+    margin: 1.5cm 1cm;
+  }
+
+  h2 {
+    margin-top: 1.25cm;
+  }
+
+  header,
+  main,
+  footer {
+    padding: 0 0.5cm;
+  }
+
+  header,
+  main {
+    margin-top: 1cm;
+  }
+
+  main {
+    margin-bottom: 1cm;
+  }
+
+  #s-text {
+    margin: 0 1.5em;
+  }
+
+  #f-contact {
+    flex-wrap: wrap;
+  }
+
+  #c-table {
+    row-gap: 0;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}
+
+
+/* Mobile Phones */
+
+@media (width <= 500px) {
+  body {
+    margin: 0.5cm 0.25cm;
+  }
+
+  header > img {
+    height: 4cm;
+  }
+
+  h2 {
+    margin-top: 1cm;
+  }
+
+  header,
+  main,
+  footer {
+    padding: 0 0.25cm;
+  }
+
+  header,
+  main {
+    margin-top: 0.5cm;
+  }
+
+  main {
+    margin-bottom: 0.5cm;
+  }
+
+  footer {
+    font-size: 0.75em;
+  }
+
+  #f-contact > *:first-child {
+    margin-right: 0.25cm;
+  }
+
+  #f-copy {
+    justify-content: flex-end;
+  }
+
+  #c-table {
+    margin: 0;
+  }
 }

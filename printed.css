@@ -1,0 +1,120 @@
+
+
+/* Reset to default, even when viewed on mobile. */
+
+body {
+  margin: 2cm 1.5cm;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 1.5cm;
+}
+
+img {
+  display: block;
+}
+
+header > img {
+  float: right;
+  height: 5cm;
+  margin-left: 0.5cm;
+  margin-bottom: 0.25cm;
+}
+
+header,
+main,
+footer {
+  padding: 0 1cm;
+}
+
+header,
+main {
+  margin-top: 1.5cm;
+}
+
+main {
+  margin-bottom: 1.5cm;
+}
+
+#c-table {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  column-gap: 1em;
+  row-gap: 0.25em;
+  margin-left: 2.5em;
+}
+
+#s-text {
+  margin: 0 2.5em;
+}
+
+li > h3 {
+  margin-bottom: 0;
+}
+
+footer {
+  font-family: 'Courier New', Courier, monospace;
+}
+footer > * {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+#f-contact {
+  justify-content: space-between;
+}
+#f-copy {
+  justify-content: space-around;
+}
+
+.u-line {
+  text-decoration: underline;
+}
+
+
+/* Printer Styling */
+
+body {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 1cm;
+  break-after: avoid;
+}
+
+header > img {
+  height: 4cm;
+}
+
+header,
+main,
+footer {
+  padding: 0 1cm;
+}
+
+header,
+main {
+  margin-top: 1.25cm;
+}
+
+main {
+  margin-bottom: 1.25cm;
+}
+
+#c-table {
+  row-gap: 0.25em;
+}
+
+footer {
+  display: none;
+}
+
+li {
+  break-inside: avoid;
+}
