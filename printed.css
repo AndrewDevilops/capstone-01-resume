@@ -90,6 +90,7 @@ h2 {
 
 header > img {
   height: 4cm;
+  filter: grayscale(50%);
 }
 
 header,
